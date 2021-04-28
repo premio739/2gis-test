@@ -12,7 +12,7 @@ resize_img() {
 	then
 		img_newheight=360
 		convert $image -resize "$img_width"x"$img_newheight"\! ${image%.*}$prefix.${image##*.}
-	elif [ $width -gt $height ]
+	elif [ $img_width -gt $img_height ]
 	then
 		img_newwidth=360
 		convert $image -resize "$img_newwidth"x"$img_height"\! ${image%.*}$prefix.${image##*.}
