@@ -63,5 +63,5 @@ elif [ $# -eq "1" ]
 then
 	get_img_from_file $path_to_file
 else
-	echo "Too many arguments"
+	echo "Too many arguments."
 fi
